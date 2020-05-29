@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/download" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="67dp"
+        android:gravity="center"
+        android:text="@string/titulo"
+        android:textSize="24sp"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/txtUsuario"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:gravity="left|center_vertical"
+        android:text="@string/usser" />
+
+    <TextView
+        android:id="@+id/txtContraseña"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txtUsuario"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="0dp"
+        android:gravity="left|center_vertical"
+        android:text="@string/pass" />
+
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/txtUsuario"
+        android:ems="10"
+        android:hint="Ingrese Usuario"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etContraseña"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etUsuario"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/txtContraseña"
+        android:ems="10"
+        android:hint="Ingrese Contraseña"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="132dp"
+        android:layout_marginBottom="119dp"
+        android:onClick="Validar"
+        android:text="@string/acep" />
+
+</RelativeLayout>

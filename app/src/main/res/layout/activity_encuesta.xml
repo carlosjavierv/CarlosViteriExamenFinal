@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Encuesta">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="337dp"
+        android:text="Está interesado en aprender otro idioma aparte de inglés"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@mipmap/download" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="111dp"
+        android:text="Realice la siguiente encuesta:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="151dp"
+        android:text="¿Por que eligio este Centro?"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="241dp"
+        android:text="¿Que deporte practica?"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etCentro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="184dp"
+        android:ems="10"
+        android:hint="Ingrese su respuesta"
+        android:inputType="textPersonName"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/cbFutbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="297dp"
+        android:text="Futbol"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/cbNatacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="286dp"
+        android:layout_marginLeft="286dp"
+        android:layout_marginTop="296dp"
+        android:text="Natación"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="475dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginRight="184dp"
+        android:onClick="Seguir"
+        android:text="@string/acep" />
+
+    <RadioGroup
+        android:layout_width="181dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="383dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginRight="143dp">
+
+        <RadioButton
+            android:id="@+id/rbFrances"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Francés"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rbProtugues"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Portugues"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cbEcuavoley"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginRight="171dp"
+        android:text="Ecuavoley"
+        android:textSize="12sp" />
+
+</RelativeLayout>

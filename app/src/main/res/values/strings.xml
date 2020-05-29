@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">CarlosViteriExamen</string>
+    <string name="titulo">CARVISA COURSE ONLINE</string>
+    <string name="usser">USUARIO:</string>
+    <string name="pass">CONTRASEÑA:</string>
+    <string name="acep">ACEPTAR</string>
+    <string name="calc">CALCULAR</string>
+    <string name="guardar">GUARDAR</string>
+    <string name="salir">SALIR</string>
+
+
 </resources>
