@@ -70,7 +70,7 @@
 
     <EditText
         android:id="@+id/etCentro"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
@@ -162,5 +162,41 @@
         android:layout_marginRight="171dp"
         android:text="Ecuavoley"
         android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txtRecibir1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="15dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txtRecibir2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginLeft="77dp"
+        android:layout_marginBottom="13dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txtRecibir3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginBottom="13dp"
+        android:visibility="invisible" />
 
 </RelativeLayout>

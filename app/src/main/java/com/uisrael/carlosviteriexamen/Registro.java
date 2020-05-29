@@ -39,9 +39,16 @@ public class Registro extends AppCompatActivity {
     }
 
     public void Guardar (View v){
-        String pag1, nom;
+        String pag1, nom, usu;
         pag1=pago.getText().toString();
         nom=nombre.getText().toString();
+        usu=cajaRecibir.getText().toString();
+
+
+        Intent intentEnviar1=new Intent(Registro.this,Encuesta.class);
+        intentEnviar1.putExtra("datoEnviado2",nom);
+        intentEnviar1.putExtra("datoEnviado3",pag1);
+        intentEnviar1.putExtra("datoEnviado1",usu);
 
         if(pag1.equals("")){
 
@@ -52,11 +59,12 @@ public class Registro extends AppCompatActivity {
 
         }
 
-        Intent intentAbrir=new Intent(Registro.this, Encuesta.class);
-        Intent intentEnviar1= new Intent(Registro.this, Resumen.class);
-        intentEnviar1.putExtra("datoEnviado1",nom);
-        intentEnviar1.putExtra("datoEnviado8",pag1);
-        startActivity(intentAbrir);
+        //Intent intentAbrir=new Intent(Registro.this, Encuesta.class);
+        //Intent intentEnviar1= new Intent(Registro.this, Encuesta.class);
+        //intentEnviar1.putExtra("datoEnviado2",nom);
+        //intentEnviar1.putExtra("datoEnviado3",pag1);
+        //intentEnviar1.putExtra("datoEnviado1",us);
+        //startActivity(intentAbrir);
         startActivity(intentEnviar1);
     }
 

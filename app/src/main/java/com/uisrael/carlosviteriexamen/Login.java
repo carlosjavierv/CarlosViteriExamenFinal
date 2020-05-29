@@ -27,7 +27,9 @@ public class Login extends AppCompatActivity {
         if (usuario.equals("estudiante2020") && contraseña.equals("uisrael2020")){
             //Intent intentAbrir=new Intent(Login.this, Registro.class);
             Intent intentEnviar= new Intent(Login.this, Registro.class);
+            //Intent intentEnviar2= new Intent(Login.this, Resumen.class);
             intentEnviar.putExtra("datoEnviado",usuario);
+            //intentEnviar2.putExtra("datoEnviado",usuario);
             //startActivity(intentAbrir);
             startActivity(intentEnviar);
             Toast.makeText(getApplicationContext(),"usuario y contraseña correctos", Toast.LENGTH_LONG).show();
