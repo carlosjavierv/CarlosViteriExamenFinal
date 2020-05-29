@@ -35,7 +35,7 @@ public class Registro extends AppCompatActivity {
         recargo=total * 0.05;
         resul=((total-valor)/3)+recargo;
         pago.setText(Double.toString(resul));
-
+///p
     }
 
     public void Guardar (View v){
